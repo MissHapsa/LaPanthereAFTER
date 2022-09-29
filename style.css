@@ -1023,6 +1023,8 @@ h4 {
     }
     form {
         padding: 5px;
+        width: 90%;
+        margin-left: 19px;
     }
     .close-lightbox {
         display: inline-block;
