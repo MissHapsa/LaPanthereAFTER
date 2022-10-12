@@ -2,18 +2,14 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" 
-	content="Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site"
+    <meta
+      name="description"
+      content="Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site"
     />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     />
-    <meta
-      name="keywords"
-      content="site webdesign, agence webdesign, agence design paris, agence web design lyon, webdesign, agence lyon, conception graphique"
-    />
-
     <link
       rel="canonical"
       href="https://misshapsa.github.io/LaPanthereAFTER/index.html "
@@ -115,48 +111,66 @@
               <div class="col-sm-6">
                 <form
                   id="form_1"
-                  novalidate
-                  data-success-msg="Your message has been sent."
-                  data-fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
+                  novalidate=""
+                  success-msg="Your message has been sent."
+                  fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
+                  class="error"
                 >
                   <div class="form-group">
-                    <label> Nom </label>
-                    <input id="name" class="form-control" required />
-                  </div>
-                  <div class="form-group">
-                    <label> Adresse email </label>
+                    <label for="name"> Nom </label>
                     <input
-                      id="email"
-                      class="form-control"
-                      type="email"
-                      required
-                    />
+                      id="name" class="form-control"required="" id="input_504" aria-invalid="false"/>
+                    <div class="help-block">
+                    </div>
                   </div>
+
                   <div class="form-group">
-                    <label> Comment nous avez-vous connu ? </label>
+                    <label for="email"> Adresse email </label>
                     <input
-                      class="form-control"
-                      type="email"
-                      required
-                      id="input_504"
-                    />
+                      id="email" class="form-control" type="email" required="" id="input_504" aria-invalid="true"/>
+                    <div class="help-block">
+                      <ul
+                        class="list-unstyled alert alert-warning"
+                        role="alert">
+                        <li>
+                          This is required<!-- data-validator-required-message to override -->
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label>
+
+                  <div class="form-group error">
+                    <label for="how-know-us"> Comment nous avez-vous connu ? </label>
+                    <input 
+                    id="how-know-us" class="form-control" type="email" required="" id="input_504" aria-invalid="true"/>
+                    <div class="help-block">
+                      <ul class="list-unstyled alert alert-warning" role="alert">
+                        <li>
+                          This is required<!-- data-validator-required-message to override -->
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="form-group error">
+                    <label for="message">
                       Brief de votre projet (Ajoutez autant de détails que
-                      nécessaire)<br /> </label
-                    ><textarea
-                      id="message"
-                      class="form-control"
-                      rows="4"
-                      cols="50"
-                      required
-                    ></textarea>
+                      nécessaire)<br />
+                    </label>
+                    <textarea id="message" class="form-control" rows="4" cols="50" required="" aria-invalid="true">
+                    </textarea>
+                    <div class="help-block">
+                      <ul
+                        class="list-unstyled alert alert-warning" role="alert">
+                        <li>
+                          This is required<!-- data-validator-required-message to override -->
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                   <button
                     class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
-                    type="submit"
-                  >
+                    type="submit">
                     Envoyer
                   </button>
                 </form>
@@ -237,11 +251,13 @@
         <!-- Footer - bloc-8 END -->
         <!-- Principal conteneur END -->
       </footer>
-      <script async src="./js/jquery-2.1.0.js"></script>
-      <script async src="./js/bootstrap.js"></script>
-      <script async src="./js/blocs.js"></script>
-      <script defer src="./js/jquery.touchSwipe.js"></script>
-      <script async src="./js/gmaps.js"></script>
+      <script src="./js/jquery-2.1.0.js"></script>
+      <script src="./js/jqBootstrapValidation.js"></script>
+      <script src="./js/formHandler.js"></script>
+      <script src="./js/bootstrap.js"></script>
+      <script src="./js/blocs.js"></script>
+      <script src="./js/jquery.touchSwipe.js"></script>
+      <script src="./js/gmaps.js"></script>
     </div>
   </body>
 </html>
