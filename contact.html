@@ -1,31 +1,35 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="Agence web à paris, stratégie web, web design, illustrations, design de site web, site web, web, internet, site internet, site"
-    />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
-    />
-    <link
+<!doctype html>
+<html lang="Default">
+<head>
+    <meta charset="utf-8">
+	<meta
+	name="description"
+	content="L'agence La Panthère est une agence de web désigne qui aide les entreprises à devenir plus attractives et visibles sur internet."/>    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+  <link
       rel="canonical"
       href="https://misshapsa.github.io/LaPanthereAFTER/index.html "
     />
     <link rel="shortcut icon" type="image/png" href="favicon.jpg" />
 
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <link rel="stylesheet" type="text/css" href="./css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="./css/et-line.css" />
+   
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css"/>
+  <link rel="stylesheet" type="text/css" href="./style.css"/>
+  <link rel="stylesheet" type="text/css" href="./css/font-awesome.css"/>
+  <link rel="stylesheet" type="text/css" href="./css/et-line.css"/>
 
-    <title>Contact</title>
-    <meta name="robots" content="index,follow" />
-    <meta
-      name="google-site-verification"
-      content="lKTnORk6-b9JAVt-GNRjbWOEOavqstJchUo9MwMTMmI"
+  
+<script src="./js/jquery-2.1.0.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/blocs.js"></script>
+<script src="./js/jquery.touchSwipe.js" defer></script>
+<script src="./js/gmaps.js"></script>
+
+  <title>Contact</title>
+  <meta name="robots" content="index,follow" />
+  <meta name="google-site-verification"
+  content="lKTnORk6-b9JAVt-GNRjbWOEOavqstJchUo9MwMTMmI"
     />
     <!-- Analytics -->
     <!-- Google tag (gtag.js) -->
@@ -109,76 +113,38 @@
           <div class="container bloc-lg">
             <div class="row">
               <div class="col-sm-6">
-                <form
-                  id="form_1"
-                  novalidate=""
-                  success-msg="Your message has been sent."
-                  fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
-                  class="error"
-                >
+                <form  id="form_1" novalidate data-success-msg="Your message has been sent." data-fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
                   <div class="form-group">
-                    <label for="name"> Nom </label>
-                    <input
-                      id="name" class="form-control"required="" id="input_504" aria-invalid="false"/>
-                    <div class="help-block">
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="email"> Adresse email </label>
-                    <input
-                      id="email" class="form-control" type="email" required="" id="input_504" aria-invalid="true"/>
-                    <div class="help-block">
-                      <ul
-                        class="list-unstyled alert alert-warning"
-                        role="alert">
-                        <li>
-                          This is required<!-- data-validator-required-message to override -->
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="form-group error">
-                    <label for="how-know-us"> Comment nous avez-vous connu ? </label>
-                    <input 
-                    id="how-know-us" class="form-control" type="email" required="" id="input_504" aria-invalid="true"/>
-                    <div class="help-block">
-                      <ul class="list-unstyled alert alert-warning" role="alert">
-                        <li>
-                          This is required<!-- data-validator-required-message to override -->
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="form-group error">
-                    <label for="message">
-                      Brief de votre projet (Ajoutez autant de détails que
-                      nécessaire)<br />
+                    <label for="name">
+                      Nom
                     </label>
-                    <textarea id="message" class="form-control" rows="4" cols="50" required="" aria-invalid="true">
-                    </textarea>
-                    <div class="help-block">
-                      <ul
-                        class="list-unstyled alert alert-warning" role="alert">
-                        <li>
-                          This is required<!-- data-validator-required-message to override -->
-                        </li>
-                      </ul>
-                    </div>
+                    <input id="name" class="form-control" required />
                   </div>
-                  <button
-                    class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
-                    type="submit">
+                  <div class="form-group">
+                    <label for="email">
+                      Adresse email
+                    </label>
+                    <input id="email" class="form-control" type="email" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="input_504">
+                      Comment nous avez-vous connu ?
+                    </label>
+                    <input class="form-control" type="email" required id="input_504" />
+                  </div>
+                  <div class="form-group">
+                    <label for="message">
+                      Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
+                    </label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+                  </div> 
+                  <button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
                     Envoyer
                   </button>
                 </form>
               </div>
               <div class="col-sm-6">
                 <p>
-                  contact@agencelapanthere.com<br />2 place Sathonay 69001
-                  Lyon<br />Ouvert de 9h à 18h, du lundi au vendredi<br />
+                  contact@agencelapanthere.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
                 </p>
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.0829506554946!2d4.827978614762887!3d45.76952782104023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb020f3664e9%3A0x13e3d71752922c1f!2s2%20Pl.%20Sathonay%2C%2069001%20Lyon!5e0!3m2!1sfr!2sfr!4v1664484949189!5m2!1sfr!2sfr"
