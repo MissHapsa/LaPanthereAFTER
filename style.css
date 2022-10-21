@@ -517,7 +517,7 @@ h2 {
     color:rgb(2, 2, 2)!important;
 }
 h3 {
-    font: size 20px;
+    font-size: 20px;
     font-weight:450;
     color:#020202!important;
 }
@@ -587,8 +587,9 @@ h4 {
 .ltc-white {
     color:#0F0F0F !important
 }
-.tc-white1 h3 {
+.tc-white1 {
     color:#FFFFFF!important;
+    font-size: 24px;
 }
 
 .ltc-white:hover {
